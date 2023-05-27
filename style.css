@@ -1,9 +1,39 @@
+/* table style */
 
-th, td {
-  padding: 15px;
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  color: #862d2d;
+  font-size: 0.9rem;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  vertical-align: middle;
   text-align: left;
 }
-th, td {
-  border-bottom: 1px solid #ddd;
+
+thead th {
+  font-weight: 700;
+  background-color: #d27979;
+  border-top: 2px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
 }
-tr:hover {background-color: coral;}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f2d9d9;
+}
+
+tbody td {
+  border-top: 1px solid #dee2e6;
+}
+
+/* hover effect */
+
+tr:hover {
+  background-color: #f8ecec;
+}
